@@ -1,0 +1,6 @@
+<h2>Pizza Orders are:</h2>
+<% for order in @orders %>
+  <p> <a href="/pizza-orders/<%= order.id %>">Show Order</a> Name: <%= order.pretty_name() %> Order: <%= order.quantity %> <%= order.topping %></p>
+<% end %>
+
+<%# comment %>

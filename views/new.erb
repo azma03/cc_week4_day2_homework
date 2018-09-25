@@ -1,0 +1,14 @@
+<form method="post" action="/pizza-orders"> <%# send the data to this address one the submit button is clicked %>
+  <label for="first-name">First Name:</label> <%# for= should be the same as the id= of the next input for selecting the value later on %>
+  <input id="first-name" type="text" name="first_name" /> <%# name should be the same as the property of the instance %>
+  <label for="last-name">Last Name:</label>
+  <input id="last-name" type="text" name="last_name" />
+  <label for="pizza-select">Select a Pizza:</label>
+  <select id="pizza-select" name="topping">
+    <option value="Margherita">Margherita</option>
+    <option value="Calzone">Calzone</option>
+  </select>
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" name="quantity" />
+  <input type="submit" value="Order Pizza" />
+</form>
